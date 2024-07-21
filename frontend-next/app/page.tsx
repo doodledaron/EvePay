@@ -1,30 +1,15 @@
-'use client';
-
+import Categories from "@/components/Categories/Categories";
+import PropertyList from "@/components/properties/PropertyList";
 import Image from "next/image";
-import { useEffect, useState } from 'react';
-import { FetchTestMessage } from '../components/testapi';
 
 export default function Home() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    async function getData() {
-      try {
-        const data = await FetchTestMessage();
-        console.log('Fetched data:', data);
-        setMessage(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-
-    getData();
-  }, []);
-
   return (
-    <main>
-     <h1>Test API Connection</h1>
-     {/* <p>{message}</p> */}
+    <main className="max-w-[1500px] mx-auto px-6">
+      <Categories />
+
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <PropertyList />
+      </div>
     </main>
   );
 }
