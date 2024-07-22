@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { useRouter } from 'next/router';
 
-const PropertyDetailPage = () => {
-    const router = useRouter();
-    const { id } = router.query;
+const PropertyDetailPage = ({ params }: { params: { id: string } }) => {
+    const { id } = params;
 
     return (
         <main className="max-w-[1500px] mx-auto px-6 pb-6">
+            <div>
+                <h1>Post: {id}</h1>
+            </div>
             <h1>Property ID: {id}</h1>
             <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">
                 <Image

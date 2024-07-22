@@ -1,5 +1,5 @@
 import Categories from "@/components/Categories/Categories";
-import PropertyList from "@/components/properties/PropertyList";
+import PropertyList from "@/app/properties/PropertyList";
 import Image from "next/image";
 
 export default function Home() {
