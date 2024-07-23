@@ -1,0 +1,23 @@
+2024-07-23 14:53:10,504 - WARNING - Method Not Allowed: /maschain_wallet/api_create_wallet
+2024-07-23 14:53:28,377 - ERROR - Unexpected error occurred: JSON parse error - Expecting property name enclosed in double quotes: line 3 column 1 (char 21)
+2024-07-23 14:53:28,379 - ERROR - Internal Server Error: /maschain_wallet/api_create_wallet
+2024-07-23 14:53:28,394 - WARNING - Method Not Allowed: /maschain_wallet/api_create_wallet
+2024-07-23 14:54:22,821 - DEBUG - Request Data: {'name': 'test'}
+2024-07-23 14:54:22,825 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 14:54:23,299 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/wallet HTTP/11" 200 None
+2024-07-23 14:54:23,313 - WARNING - Method Not Allowed: /maschain_wallet/api_create_wallet
+2024-07-23 14:55:58,228 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 14:56:04,438 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 14:56:11,383 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 14:56:26,661 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 14:56:43,383 - WARNING - Method Not Allowed: /maschain_wallet/api_create_user_wallet
+2024-07-23 14:57:09,706 - DEBUG - Request Data: {'name': 'test name2', 'email': 'testemail9@gmail.com', 'ic': 'test ic', 'phone': 'test ic', 'entity_id': 1}
+2024-07-23 14:57:09,712 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 14:57:10,182 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/create-user HTTP/11" 400 45
+2024-07-23 14:57:10,183 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://service-testnet.maschain.com/api/wallet/create-user - 400 - {"status":400,"result":"Entity id not found"}
+2024-07-23 14:57:10,185 - ERROR - Internal Server Error: /maschain_wallet/api_create_user_wallet
+2024-07-23 14:57:10,198 - WARNING - Method Not Allowed: /maschain_wallet/api_create_user_wallet
+2024-07-23 15:00:07,706 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 15:00:46,014 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 15:12:13,524 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 21:25:43,550 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.

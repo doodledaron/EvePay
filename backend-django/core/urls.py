@@ -19,6 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('maschain_token/', include('api_token.urls')),
-    # path('maschain_wallet/', include('api_wallet.urls')),
+    path('maschain_wallet/', include('api_wallet.urls')),
     path('admin/', admin.site.urls),
 ]
