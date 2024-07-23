@@ -9,6 +9,9 @@ urlpatterns = [
     path('api_create_cat_entity', views.create_entity_category, name='create-entity-category'),
     path('api_create_entity', views.create_entity, name='create-entity'),
 
+    path('api_get_entity', views.get_entity_list, name='get-entity'),
+    path('api_get_cat_entity', views.get_cat_entity_list, name='get-cat-entity'),
+
     # path('api_get_wallet', views.get_wallet, name='get-wallet'),
     # path('api_get_wallet_balance', views.get_wallet_balance, name='get-wallet-balance'),
 ]

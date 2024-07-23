@@ -22,3 +22,45 @@
 2024-07-23 15:12:13,524 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
 2024-07-23 21:25:43,550 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
 2024-07-23 21:26:39,838 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 21:29:22,570 - WARNING - Method Not Allowed: /maschain_wallet/api_create_entity
+2024-07-23 21:29:55,782 - WARNING - Method Not Allowed: /maschain_wallet/api_create_cat_entity
+2024-07-23 21:30:41,320 - DEBUG - Request Data: {'name': 'EveCharge', 'parent_category_id': '1'}
+2024-07-23 21:30:41,369 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 21:30:41,780 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/entity-category HTTP/11" 400 81
+2024-07-23 21:30:41,782 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://service-testnet.maschain.com/api/wallet/entity-category - 400 - {"status":400,"result":"Cannot find entity category for this parent category id"}
+2024-07-23 21:30:41,784 - ERROR - Internal Server Error: /maschain_wallet/api_create_cat_entity
+2024-07-23 21:30:41,797 - WARNING - Method Not Allowed: /maschain_wallet/api_create_cat_entity
+2024-07-23 21:32:36,084 - DEBUG - Request Data: {'name': 'EveCharge'}
+2024-07-23 21:32:36,207 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 21:32:36,564 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/entity-category HTTP/11" 200 None
+2024-07-23 21:32:37,156 - WARNING - Method Not Allowed: /maschain_wallet/api_create_cat_entity
+2024-07-23 21:33:40,962 - WARNING - Method Not Allowed: /maschain_wallet/api_create_entity
+2024-07-23 21:34:06,637 - DEBUG - Request Data: {'name': 'EveCharge', 'external_id': 'Eve_external', 'entity_category_id': 1}
+2024-07-23 21:34:06,646 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 21:34:06,962 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/entity HTTP/11" 400 54
+2024-07-23 21:34:06,964 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://service-testnet.maschain.com/api/wallet/entity - 400 - {"status":400,"result":"Entity category id not found"}
+2024-07-23 21:34:06,964 - ERROR - Internal Server Error: /maschain_wallet/api_create_entity
+2024-07-23 21:34:06,982 - WARNING - Method Not Allowed: /maschain_wallet/api_create_entity
+2024-07-23 21:35:42,254 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 21:38:28,996 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 21:39:35,594 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 21:39:41,391 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 21:39:41,840 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/entity HTTP/11" 200 26
+2024-07-23 21:40:25,897 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 22:37:25,898 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 22:37:42,414 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 22:37:52,235 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 22:37:52,599 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/entity-category HTTP/11" 200 None
+2024-07-23 22:38:13,513 - WARNING - Method Not Allowed: /maschain_wallet/api_create_entity
+2024-07-23 22:40:00,699 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 22:40:04,427 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 22:40:04,879 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet HTTP/11" 404 40
+2024-07-23 22:40:04,884 - WARNING - Not Found: /maschain_wallet/api_wallet
+2024-07-23 22:40:20,793 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 22:40:25,068 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 22:40:25,516 - DEBUG - https://service-testnet.maschain.com:443 "GET / HTTP/11" 200 None
+2024-07-23 22:40:51,000 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 22:43:23,383 - DEBUG - Request Data: {'name': 'EveCharge Project', 'external_id': 'eveCharge', 'entity_category_id': 6}
+2024-07-23 22:43:23,391 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 22:43:23,810 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/entity HTTP/11" 200 None
+2024-07-23 22:43:23,906 - WARNING - Method Not Allowed: /maschain_wallet/api_create_entity
