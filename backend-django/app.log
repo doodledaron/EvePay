@@ -68,3 +68,116 @@
 2024-07-23 22:44:33,900 - WARNING - Not Found: /maschain_wallet/GET
 2024-07-23 22:44:41,997 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
 2024-07-23 22:44:43,378 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/entity HTTP/11" 200 None
+2024-07-23 23:11:43,136 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:12:19,988 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:13:16,027 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:13:17,455 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet?type=1 HTTP/11" 200 None
+2024-07-23 23:25:51,194 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:26:01,760 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:26:09,254 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:26:09,703 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet?type=2 HTTP/11" 200 None
+2024-07-23 23:33:34,315 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:35:53,506 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:36:05,678 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:36:13,053 - WARNING - Bad Request: /maschain_wallet/api_get_wallet_addr
+2024-07-23 23:37:45,478 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/
+2024-07-23 23:37:49,122 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/
+2024-07-23 23:38:28,296 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/
+2024-07-23 23:38:35,212 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:38:42,587 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/{0x43DD31E85Ac344125217C5FC4065c6a7F4b54225}
+2024-07-23 23:48:36,560 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:48:43,730 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/{0x43DD31E85Ac344125217C5FC4065c6a7F4b54225}
+2024-07-23 23:48:54,775 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/address=0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:31,787 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:49:36,435 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:49:40,817 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/address=0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:41,368 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/address=0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:41,530 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/address=0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:41,798 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/address=0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:47,385 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:49:50,986 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/
+2024-07-23 23:49:53,742 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr
+2024-07-23 23:50:08,067 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225/
+2024-07-23 23:50:47,653 - WARNING - Not Found: /maschain_wallet/api_get_wallet_addr/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225
+2024-07-23 23:53:27,943 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:53:44,829 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:53:45,250 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225 HTTP/11" 200 None
+2024-07-23 23:56:02,665 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-23 23:57:12,359 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:57:12,778 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225 HTTP/11" 200 None
+2024-07-23 23:57:41,812 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:58:20,019 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:58:35,072 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225/
+Traceback (most recent call last):
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: activate_wallet() got an unexpected keyword argument 'address'
+2024-07-23 23:59:26,789 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:59:31,743 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:59:32,136 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225/activate HTTP/11" 404 40
+2024-07-23 23:59:32,137 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-23 23:59:32,138 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/0x43DD31E85Ac344125217C5FC4065c6a7F4b54225/
+2024-07-23 23:59:51,166 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-23 23:59:54,378 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:59:54,648 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5767/activate HTTP/11" 404 40
+2024-07-23 23:59:54,649 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5767/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-23 23:59:54,649 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/5767/
+2024-07-23 23:59:59,070 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-23 23:59:59,362 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5767/activate HTTP/11" 404 40
+2024-07-23 23:59:59,362 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5767/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-23 23:59:59,363 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/5767/
+2024-07-24 00:00:34,441 - WARNING - Method Not Allowed: /maschain_wallet/api_create_user_wallet
+2024-07-24 00:01:30,740 - DEBUG - Request Data: {'name': 'Daron', 'email': 'daron@gmail.com', 'ic': '039985640397', 'phone': '0123456789', 'entity_id': 7}
+2024-07-24 00:01:30,767 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 00:01:31,201 - DEBUG - https://service-testnet.maschain.com:443 "POST /api/wallet/create-user HTTP/11" 200 None
+2024-07-24 00:01:31,225 - WARNING - Method Not Allowed: /maschain_wallet/api_create_user_wallet
+2024-07-24 00:06:53,551 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 00:07:26,464 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 00:07:30,144 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/5767/
+2024-07-24 00:07:48,039 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-24 00:07:51,216 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:08:14,518 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 00:08:21,169 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:08:21,899 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:08:51,445 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 00:08:51,785 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5767/activate HTTP/11" 404 40
+2024-07-24 00:08:51,787 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5767/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-24 00:08:51,789 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:08:51,810 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:10:00,248 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 00:10:00,518 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5767/activate HTTP/11" 404 40
+2024-07-24 00:10:00,518 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5767/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-24 00:10:00,519 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:10:00,529 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:11:28,050 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 00:11:28,357 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832 HTTP/11" 200 None
+2024-07-24 00:11:49,659 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 00:11:49,948 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5771/activate HTTP/11" 404 40
+2024-07-24 00:11:49,949 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5771/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-24 00:11:49,950 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:11:49,961 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-24 00:12:27,083 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 00:13:16,183 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
