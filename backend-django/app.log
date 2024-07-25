@@ -181,3 +181,47 @@ TypeError: activate_wallet() got an unexpected keyword argument 'address'
 2024-07-24 00:11:49,961 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
 2024-07-24 00:12:27,083 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
 2024-07-24 00:13:16,183 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 01:00:31,594 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 01:00:32,026 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832 HTTP/11" 200 None
+2024-07-24 01:01:59,495 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 01:02:35,814 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\urls.py changed, reloading.
+2024-07-24 01:03:32,593 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 01:03:33,002 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832 HTTP/11" 200 None
+2024-07-24 01:04:00,414 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 01:04:00,581 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/walletwallet/0x0EE18036726a59626f89571BB4507842040b4832/transactions-count?block=pending HTTP/11" 404 None
+2024-07-24 01:04:00,581 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/walletwallet/0x0EE18036726a59626f89571BB4507842040b4832/transactions-count?block=pending - 404 - <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /api/walletwallet/0x0EE18036726a59626f89571BB4507842040b4832/transactions-count</pre>
+</body>
+</html>
+
+2024-07-24 01:04:00,588 - ERROR - Internal Server Error: /maschain_wallet/api_get_wallet_transaction/0x0EE18036726a59626f89571BB4507842040b4832/
+2024-07-24 01:04:12,341 - INFO - C:\Users\alpha\Desktop\Stealth_Mode\stealthmode-hackathon-blockchain\backend-django\api_wallet\views.py changed, reloading.
+2024-07-24 01:04:16,031 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-24 01:04:16,411 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832/transactions-count?block=pending HTTP/11" 200 None
+2024-07-25 15:34:05,851 - WARNING - Not Found: /
+2024-07-25 15:34:05,945 - WARNING - Not Found: /favicon.ico
+2024-07-25 15:34:32,372 - WARNING - Not Found: /api_activate_wallet
+2024-07-25 15:34:42,466 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-25 15:35:58,224 - WARNING - Not Found: /
+2024-07-25 15:36:03,451 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:36:03,804 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/entity HTTP/11" 200 None
+2024-07-25 15:36:08,080 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:36:08,315 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832 HTTP/11" 200 None
+2024-07-25 15:36:21,068 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:36:21,264 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/5771/activate HTTP/11" 404 40
+2024-07-25 15:36:21,265 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://service-testnet.maschain.com/api/wallet/wallet/5771/activate - 404 - {"status":404,"result":"Path not found"}
+2024-07-25 15:36:21,266 - ERROR - Internal Server Error: /maschain_wallet/api_activate_wallet/
+2024-07-25 15:36:21,277 - WARNING - Method Not Allowed: /maschain_wallet/api_activate_wallet/
+2024-07-25 15:56:14,776 - WARNING - Not Found: /
+2024-07-25 15:56:25,094 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:56:25,349 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/entity HTTP/11" 200 None
+2024-07-25 15:56:34,021 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:56:34,265 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832 HTTP/11" 200 None
+2024-07-25 15:56:54,103 - DEBUG - Starting new HTTPS connection (1): service-testnet.maschain.com:443
+2024-07-25 15:56:54,476 - DEBUG - https://service-testnet.maschain.com:443 "GET /api/wallet/wallet/0x0EE18036726a59626f89571BB4507842040b4832/transactions-count?block=pending HTTP/11" 200 None
