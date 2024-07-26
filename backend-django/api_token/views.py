@@ -194,24 +194,39 @@ def transfer_token(request, capacity_used):
     try:
         # Get the charge token value
         charge_token = calculate_charge(capacity_used)
-        
+
         # Get data from the request body
         data = request.data
 
-        # Update the amount field with the charge token value
-        data['amount'] = charge_token 
-        # data['callback_url'] = 'http://localhost:8000/maschain_token/callback-handler/' 
-        logger.debug(f"Request Data: {data}")
-           
-        # Make the POST request to the external API with the data
-        response = requests.post(API_URL, headers=headers, json=data)
-        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx and 5xx)
-        
-        if response.status_code == 200:
-            logger.debug(f"Response Data: {response.json()}")
-            return JsonResponse({'status': 'success', 'data': response.json()})
+        # Check if the user's balance  is greater than the charge token
+        balance_response, balance_data = check_balance(data['wallet_address'])
+
+        if balance_data:
+            balance_token = balance_data.get('result')
+
         else:
-            return JsonResponse({'status': 'error', 'message': response.text}, status=response.status_code)
+            balance_token = 0 
+
+        logger.info(f"{float(balance_token)}")
+
+        if float(balance_token) < charge_token:
+            return JsonResponse({'status': 'error', 'message': 'Insufficient balance to make the transfer'})
+        
+        else:
+            # Update the amount field with the charge token value
+            data['amount'] = charge_token 
+            # data['callback_url'] = 'http://localhost:8000/maschain_token/callback-handler/' 
+            logger.debug(f"Request Data: {data}")
+            
+            # Make the POST request to the external API with the data
+            response = requests.post(API_URL, headers=headers, json=data)
+            response.raise_for_status()  # Raises an HTTPError for bad responses (4xx and 5xx)
+            
+            if response.status_code == 200:
+                logger.debug(f"Response Data: {response.json()}")
+                return JsonResponse({'status': 'success', 'data': response.json()})
+            else:
+                return JsonResponse({'status': 'error', 'message': response.text}, status=response.status_code)
     
     except requests.exceptions.HTTPError as http_err:
         logger.error(f"HTTP error occurred: {http_err} - {response.status_code} - {response.text}")
@@ -265,13 +280,17 @@ def transfer_owner(request):
         logger.error(f"Unexpected error occurred: {e}")
         return JsonResponse({'status': 'error', 'message': f'Unexpected error occurred: {e}'}, status=500)
 
-
-def check_balance(request):
+def check_balance(address):
     API_URL = f'{BASE_API_URL}/balance'
+    contract_address = '0xA10b5960afae880bA86cb3Bb5ec1Ae2eBAe19083'
 
     try:
         # Get data from the request body
-        data = request.data
+        data = {
+                    "wallet_address":f'{address}',
+                    "contract_address":f'{contract_address}'
+                }
+        
         logger.debug(f"Request Data: {data}")
         
         # Make the POST request to the external API with the data
@@ -279,8 +298,8 @@ def check_balance(request):
         response.raise_for_status()  # Raises an HTTPError for bad responses (4xx and 5xx)
         
         if response.status_code == 200:
-            logger.debug(f"Response Data: {response.json()}")
-            return JsonResponse({'status': 'success', 'data': response.json()})
+            response_data = response.json()
+            return JsonResponse({'status': 'success', 'data': response_data}), response_data
         else:
             return JsonResponse({'status': 'error', 'message': response.text}, status=response.status_code)
 
