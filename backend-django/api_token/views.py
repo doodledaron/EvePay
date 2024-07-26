@@ -18,8 +18,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Token API_KEY and API_PASSWORD
-API_KEY = 'd2e5b49b8d126cd2687d9c61b8f6ba2e64e856d6c34cdf27fb3cb9b59bd2d2a3'
-API_PASSWORD = 'sk_43375ea6665657b0030e702f30144c664239d43c03f0c9b733afd41d47db02aa'
+API_KEY = ''
+API_PASSWORD = ''
 BASE_API_URL = 'https://service-testnet.maschain.com/api/token'
 
 # Headers Credentials For Maschain API
