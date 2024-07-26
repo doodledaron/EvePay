@@ -13,10 +13,10 @@ urlpatterns = [
     path('api_get_cat_entity', views.get_cat_entity_list, name='get-cat-entity'),
     path('api_get_org_wallet', views.get_org_wallet_list, name='get-org-wallet'),
     path('api_get_user_wallet', views.get_user_wallet_list, name='get-user-wallet'),
-    path('api_get_wallet_addr/<str:address>/', views.get_wallet_adrr, name='get-wallet-addr'),
+    # path('api_get_wallet_addr/<str:address>/', views.get_wallet_adrr, name='get-wallet-addr'),
     path('api_activate_wallet/', views.activate_wallet, name='activate-wallet'),
     path('api_deactivate_wallet/', views.deactivate_wallet, name='deactivate-wallet'),
-    path('api_get_wallet_transaction/<str:address>/', views.get_wallet_transaction, name='get-wallet'),
+    path('api_get_wallet_transaction/<str:address>/', views.get_wallet_transaction_count, name='get-wallet'),
 
     # path('api_get_wallet', views.get_wallet, name='get-wallet'),
     # path('api_get_wallet_balance', views.get_wallet_balance, name='get-wallet-balance'),

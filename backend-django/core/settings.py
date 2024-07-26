@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'api_wallet',
     'api_token',
+    'utils',
     'rest_framework',
 ]
 

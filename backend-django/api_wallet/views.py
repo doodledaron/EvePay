@@ -387,18 +387,13 @@ def get_user_wallet_list(request):
         logger.error(f"Unexpected error occurred: {e}")
         return JsonResponse({'status': 'error', 'message': f'Unexpected error occurred: {e}'}, status=500)
 
-@api_view(['GET'])
-def get_wallet_adrr(request, address):
+def get_wallet_adrr(address):
     """
-    Fetch the list of entities from the external API.
+    Fetch the wallet address details from the external API.
     
     Returns:
-        JsonResponse: A JSON response with the status and data or error message.
+        dict: A dictionary with the status and data or error message.
     """
-    
-    if not address:
-        return JsonResponse({'status': 'error', 'message': 'Address parameter is required.'}, status=400)
-    
     API_URL = f'{BASE_API_URL}/wallet/{address}'
 
     try:
@@ -407,28 +402,29 @@ def get_wallet_adrr(request, address):
         response.raise_for_status()  # Raises an HTTPError for bad responses (4xx and 5xx)
         
         if response.status_code == 200:
-            return JsonResponse({'status': 'success', 'data': response.json()})
+            return response.json()
         else:
-            return JsonResponse({'status': 'error', 'message': response.text}, status=response.status_code)
+            logger.error(f"Error fetching wallet address details: {response.text}")
+            return {'status': 'error', 'message': response.text}
     
     except requests.exceptions.HTTPError as http_err:
         logger.error(f"HTTP error occurred: {http_err} - {response.status_code} - {response.text}")
-        return JsonResponse({'status': 'error', 'message': f'HTTP error occurred: {http_err}'}, status=500)
+        return {'status': 'error', 'message': f'HTTP error occurred: {http_err}'}
     except requests.exceptions.ConnectionError as conn_err:
         logger.error(f"Connection error occurred: {conn_err}")
-        return JsonResponse({'status': 'error', 'message': f'Connection error occurred: {conn_err}'}, status=500)
+        return {'status': 'error', 'message': f'Connection error occurred: {conn_err}'}
     except requests.exceptions.Timeout as timeout_err:
         logger.error(f"Timeout error occurred: {timeout_err}")
-        return JsonResponse({'status': 'error', 'message': f'Timeout error occurred: {timeout_err}'}, status=500)
+        return {'status': 'error', 'message': f'Timeout error occurred: {timeout_err}'}
     except requests.exceptions.RequestException as req_err:
         logger.error(f"An error occurred: {req_err}")
-        return JsonResponse({'status': 'error', 'message': f'An error occurred: {req_err}'}, status=500)
+        return {'status': 'error', 'message': f'An error occurred: {req_err}'}
     except Exception as e:
         logger.error(f"Unexpected error occurred: {e}")
-        return JsonResponse({'status': 'error', 'message': f'Unexpected error occurred: {e}'}, status=500)
+        return {'status': 'error', 'message': f'Unexpected error occurred: {e}'}
 
 @api_view(['GET'])
-def get_wallet_transaction(request, address):
+def get_wallet_transaction_count(request, address):
     """
     Fetch the list of entities from the external API.
     
@@ -439,7 +435,7 @@ def get_wallet_transaction(request, address):
     if not address:
         return JsonResponse({'status': 'error', 'message': 'Address parameter is required.'}, status=400)
     
-    API_URL = f'{BASE_API_URL}/wallet/{address}/transactions-count?block=pending'
+    API_URL = f'{BASE_API_URL}/wallet/{address}/transactions-count?block=safe'
 
     try:
         # Make the GET request to the external API
