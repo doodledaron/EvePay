@@ -1,15 +1,22 @@
-import Categories from "@/components/Categories/Categories";
-import PropertyList from "@/app/properties/PropertyList";
 import Image from "next/image";
+import NextButton from "../components/Button/next-button";
+import AosWrapper from "../components/AOS/aos-wrapper";
 
 export default function Home() {
   return (
-    <main className="max-w-[1500px] mx-auto px-6">
-      <Categories />
+    <div className="flex flex-col mt-16 items-center">
+      <AosWrapper animationType="fade-up" duration={1400}>
+        <Image src="/main-page.jpg" alt="Main Page" width={421} height={396} />
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        <PropertyList />
-      </div>
-    </main>
+        <p className="mt-5 text-center font-semibold text-gray">
+          Get ready for seamless and secure charging?
+        </p>
+        <p className="text-center font-semibold text-gray">
+          Login to your <span className="text-light-cyan">Maschain wallet</span>.
+        </p>
+      </AosWrapper>
+
+      <NextButton urlLink="/login" buttonText="Get Started" />
+    </div>
   );
 }
