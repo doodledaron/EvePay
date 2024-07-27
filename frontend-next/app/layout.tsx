@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navigation/Navigation";
-import Modal from "../components/Modals/Modal"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,19 +15,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const content = (
-      <p>Yo</p> 
-  )
-
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-
-        <div className="pt-48" >
-          {children}
-        </div>
+        <main className="max-w-[450px] mx-auto px-10">
+          <Navbar />
+          <div className="pt-36">{children}</div>
+        </main>
       </body>
     </html>
   );
