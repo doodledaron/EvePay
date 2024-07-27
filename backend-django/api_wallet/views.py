@@ -17,8 +17,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Wallet API_KEY and API_PASSWORD
-API_KEY = ''
-API_PASSWORD = ''
+API_KEY = '1f72c3ffa1b76eba742c3371656447d7e09ec8e208405563f0ed0c89afcbe33e'
+API_PASSWORD = 'sk_b8f75bc49cc51499702fa7d43c07ef8465ad881cad21e73e585344a8e92faccd'
 BASE_API_URL = 'https://service-testnet.maschain.com/api/wallet'
 
 headers = {
@@ -435,7 +435,7 @@ def get_wallet_transaction_count(request, address):
     if not address:
         return JsonResponse({'status': 'error', 'message': 'Address parameter is required.'}, status=400)
     
-    API_URL = f'{BASE_API_URL}/wallet/{address}/transactions-count?block=safe'
+    API_URL = f'{BASE_API_URL}/wallet/{address}/transactions-count?block=latest'
 
     try:
         # Make the GET request to the external API
