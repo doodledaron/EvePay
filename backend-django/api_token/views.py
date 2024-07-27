@@ -85,7 +85,7 @@ def transfer_token(request, capacity_used):
 
     try:
         # Get the charge token value
-        charge_token = calculate_charge(capacity_used)
+        charge_token = calculate_charge(float(capacity_used))
 
         # Get data from the request body
         data = request.data
@@ -100,8 +100,10 @@ def transfer_token(request, capacity_used):
             balance_token = 0 
 
         logger.info(f"{float(balance_token)}")
+        logger.info(f"{float(charge_token)}")
 
-        if float(balance_token) < charge_token:
+        if float(balance_token) < float(charge_token):
+            # logger.error(f"Insufficient balance to make the transfer")
             return JsonResponse({'status': 'error', 'message': 'Insufficient balance to make the transfer'})
         
         else:

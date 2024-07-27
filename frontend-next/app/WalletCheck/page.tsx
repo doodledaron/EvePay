@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Icon } from "@iconify/react";
-import NextButton from "../../components/Button/next-button";
+import NextButton from "../../components/Button/getStarted-button";
 import WalletInfor from '@/components/Card/info-card';
 import SwipeableButton from '../../components/Button/SwipeButton';
 
@@ -55,7 +55,7 @@ export default function WalletCheck() {
                         <Icon icon="mingcute:warning-fill" className="text-light-red" style={{ fontSize: "23px" }} />
                     )}
                 </div>
-                <p className='text-center font-semibold text-gray text-sm'>#M1242673</p>
+                <p className='text-center font-semibold text-gray text-sm'>0x5***0d1</p>
             </div>
             <WalletInfor availableToken={availableToken} />
             {Number(availableToken) > min_token ? (

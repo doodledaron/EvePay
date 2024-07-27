@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
     path('api_token', views.test_api_token_conn, name='test-api-token'),
     path('api_mint_token', views.mint_token, name='mint-token'),
-    path('api_transfer_token/<int:capacity_used>', views.transfer_token, name='transfer-token'),
+    path('api_transfer_token/<str:capacity_used>', views.transfer_token, name='transfer-token'),
     path('api_transfer_owner', views.transfer_owner, name='transfer-owner'),
     path('api_check_balance', views.check_balance_api, name='check-balance'),
     path('callback-handler', views.callback_handler, name='callback_handler'),

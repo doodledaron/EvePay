@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NextButton from "../components/Button/next-button";
+import NextButton from "../components/Button/getStarted-button";
 import AosWrapper from "../components/AOS/aos-wrapper";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
       </AosWrapper>
 
-      <NextButton urlLink="/login" buttonText="Get Started" />
+      <NextButton urlLink="/login" buttonText="Get Started"/>
     </div>
   );
 }
