@@ -33,7 +33,9 @@ except environ.ImproperlyConfigured:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
+
 ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
