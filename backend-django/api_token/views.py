@@ -32,7 +32,7 @@ headers = {
 # Function to calculate the charge fee
 def calculate_charge(capacity_used):
     charge_rate = 1.25
-    return charge_rate * capacity_used
+    return capacity_used / charge_rate 
 
 # Test API Token Connection
 def test_api_token_conn(request):
