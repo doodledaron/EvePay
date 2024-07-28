@@ -388,7 +388,7 @@ def get_combined_transactions(request, wallet_address):
     """
 
     API_URL = f'{BASE_API_URL}/get-token-transaction'
-    contract_address = '0xA10b5960afae880bA86cb3Bb5ec1Ae2eBAe19083'
+    contract_address = '0xFF9fE4aB4F4C255D4419B6366321e534eBE5eEdf'
     filters = ['to', 'from']
     combined_data = []
 
